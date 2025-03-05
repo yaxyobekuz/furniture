@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white font-montserrat text-base text-br-gray font-semibold;
+  }
+
+  h2 {
+    @apply text-32 font-bold leading-10;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply flex items-center justify-center w-56 text-white bg-primary text-base font-medium text-center transition-colors duration-300 hover:bg-primary/80;
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply max-w-6xl w-full px-5 mx-auto;
+  }
+}
