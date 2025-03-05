@@ -1,232 +1,511 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Furniture</title>
-  <!-- tailwind css -->
-  <link href="/dist/output.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body class="font-montserrat text-xl text-br-text-dark-gray font-semibold box-border m-0 p-0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- header  -->
+    <!-- Title -->
+    <title>Furniture</title>
 
-  <header class="py-10">
-    <div class="flex justify-between al w-full mx-auto max-w-1196">
-      <a href="index.html">
-        <h1 class="text-34 leading-41 font-bold text-br-primary">Furniture</h1>
-      </a>
-      <nav>
-        <ul class="flex items-center">
-          <li><a class="text-sm leading-17 mr-72" href="#">Home</a></li>
-          <li><a class="text-sm leading-17 mr-72" href="#">Service</a></li>
-          <li><a class="text-sm leading-17 mr-67" href="#">Doctors</a></li>
-          <li><a class="text-sm leading-17 mr-60" href="#">Products</a></li>
-          <li><a class="text-sm leading-17" href="#">Gallery</a></li>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+    />
+
+    <!-- CSS (Style) -->
+    <link href="./src/styles/output.css" rel="stylesheet" />
+  </head>
+
+  <body
+    class="font-montserrat text-xl text-br-text-dark-gray font-semibold box-border m-0 p-0"
+  >
+    <!-- header  -->
+    <header class="py-10">
+      <div class="flex justify-between al w-full mx-auto max-w-1196">
+        <!-- Logo -->
+        <a aria-label="Furniture Logo" title="Furniture Logo" href="index.html">
+          <h1 class="text-34 leading-41 font-bold text-br-primary">
+            Furniture
+          </h1>
+        </a>
+
+        <!-- Nav -->
+        <nav>
+          <ul class="flex items-center gap-16">
+            <li><a class="text-sm leading-17" href="#">Home</a></li>
+            <li><a class="text-sm leading-17" href="#">Service</a></li>
+            <li><a class="text-sm leading-17" href="#">Doctors</a></li>
+            <li><a class="text-sm leading-17" href="#">Products</a></li>
+            <li><a class="text-sm leading-17" href="#">Gallery</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero  -->
+    <section>
+      <div
+        class="bg-light-blue bg-[url(../assets/images/hero-background-img.jpg)] bg-no-repeat bg-cover bg-center py-36"
+      >
+        <div class="w-full mx-auto max-w-1270 px-5 flex justify-end">
+          <!-- Card -->
+          <div
+            class="flex flex-col max-w-2xl bg-hero-light-blue rounded-xl p-10 pr-11"
+          >
+            <!-- Title -->
+            <h2 class="mb-5 tracking-widest text-4">New Arrival</h2>
+
+            <!-- Subtitle -->
+            <p class="text-br-primary font-bold mb-5 text-5xl leading-snug">
+              Discover Our <br />
+              New Collection
+            </p>
+
+            <!-- Description -->
+            <p class="mb-8 font-medium text-lg leading-9">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+              <br />
+              elit tellus, luctus nec ullamcorper mattis.
+            </p>
+
+            <!-- Link -->
+            <a href="#" class="btn-primary h-16 rounded-full">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- About of services (Sub content) -->
+      <div class="bg-light-blue pt-11 pb-12">
+        <ul class="flex justify-between w-full max-w-1270 mx-auto px-5">
+          <!-- Item 1  -->
+          <li class="flex items-center gap-5">
+            <img
+              width="64"
+              height="64"
+              class="size-16"
+              alt="Truck icon"
+              src="./src/assets/icons/truck.svg"
+            />
+
+            <!-- Details -->
+            <div class="space-y-1.5">
+              <h3 class="text-2xl">Free Delivery</h3>
+              <p class="font-normal">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </li>
+
+          <!-- Item 2  -->
+          <li class="flex items-center gap-5">
+            <img
+              width="64"
+              height="64"
+              class="size-16"
+              alt="24/7 icon"
+              src="./src/assets/icons/24.svg"
+            />
+
+            <!-- Details -->
+            <div class="space-y-1.5">
+              <h3 class="text-2xl">Support 24/7</h3>
+              <p class="font-normal">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </li>
+
+          <!-- Item 3  -->
+          <li class="flex items-center gap-5">
+            <img
+              width="64"
+              height="64"
+              class="size-16"
+              alt="Shield icon"
+              src="./src/assets/icons/shield.svg"
+            />
+
+            <!-- Details -->
+            <div class="space-y-1.5">
+              <h3 class="text-2xl">100% Authentic</h3>
+              <p class="font-normal">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </li>
         </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- main  -->
-
-  <main>
-
-    <!-- hero  -->
-
-    <section class="bg-light-blue pt-155 pb-150 bg-[url(../images/hero-background-img.jpg)] bg-no-repeat bg-cover bg-center">
-      <div class="w-full mx-auto max-w-1270 px-5 flex justify-end">
-        <!-- item 1 -->
-        <div class="flex flex-col bg-hero-light-blue rounded-xl p-10 pr-11">
-          <p class="heading-19 tracking-[3px] text-base text-4 mb-5">New Arrival</p>
-          <h2 class="text-br-primary font-bold  mb-5 text-52 leading-65">Discover Our <br> New Collection</h2>
-          <span class="font-medium text-lg mb-8 leading-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut <br> elit tellus, luctus nec ullamcorper mattis.</span>
-          <a class="inline-block w-229 text-white leading-5 text-base bg-primary rounded-50 py-6 text-center" href="#">BUY Now</a>
-        </div>
       </div>
     </section>
 
-    <!-- service section  -->
+    <!-- Main  -->
+    <main>
+      <!-- About of Best Collections section -->
+      <section class="py-16">
+        <div class="container">
+          <!-- Section title -->
+          <h2 class="mb-5 text-center">Inspiration Collection</h2>
 
-    <section class="bg-light-blue pt-11 pb-12">
-      <!-- parent and container div  -->
-      <div class="flex justify-between w-full max-w-1270 mx-auto px-5">
-        <!-- item 1  -->
-        <div class="flex items-center">
-          <img src="./images/truck-icon.svg" alt="truck-icon.svg" class="w-84 mr-7">
-            <div class="flex flex-col">
-              <p class="text-2xl leading-29 mb-1.5">Free Delivery</p>
-              <span class="font-normal leading-5 text-base">Lorem ipsum dolor sit amet.</span>
-            </div>
-          </img>
-        </div>
-        <!-- item 2  -->
-        <div class="flex items-center">
-          <img src="./images/24-icon.svg" alt="24-icon.svg" class="w-60 mr-7">
-            <div class="flex flex-col">
-              <p class="text-2xl leading-29 mb-1.5">Support 24/7</p>
-              <span class="font-normal leading-5 text-base">Lorem ipsum dolor sit amet.</span>
-            </div>
-          </img>
-        </div>
-        <!-- item 3  -->
-        <div class="flex items-center">
-          <img src="./images/shield-icon.svg" alt="shield-icon.svg" class="w-14 mr-8">
-            <div class="flex flex-col">
-              <p class="text-2xl leading-29 mb-1.5">100% Authentic</p>
-              <span class="font-normal leading-5 text-base">Lorem ipsum dolor sit amet.</span>
-            </div>
-          </img>
-        </div>
-      </div>
-    </section>
+          <!-- Section description -->
+          <p class="mb-12 font-normal text-center text-xl">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
 
-    <!-- Inspiration Collection section -->
+          <!-- Section content -->
+          <div class="grid grid-cols-3 gap-x-10">
+            <!-- 1 -->
+            <img
+              width="355"
+              height="434"
+              class="mt-9"
+              alt="Cactus image"
+              src="./src/assets/images/cactus-img.png"
+            />
 
-    <section class="py-60">  
-      <div class="w-full max-w-1145 mx-auto">
-        <h2 class="text-32 font-bold leading-10 mb-5 text-center">Inspiration Collection</h2>
-        <p class="text-5 leading-6 font-normal text-center mb-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <div class="grid grid-cols-3 gap-x-10">
-          <img src="./images/cactus-img.png" width="w-355" alt="cactus-img.png" class="mt-9 w-355">
-          <img src="./images/soft-chair-img.png" width="w-355" alt="soft-chair-img.png" class="w-355">
-          <img src="./images/black-light.png" alt="black-light.png" class="mt-9 w-355">
-        </div>
-      </div>
-    </section>
+            <!-- 2 -->
+            <img
+              width="355"
+              height="434"
+              class="mb-9"
+              alt="Soft chair image"
+              src="./src/assets/images/soft-chair-img.png"
+            />
 
-    <!-- fourth section  -->
-
-    <section class="py-60 bg-light-blue">  
-      <div class="w-full max-w-1145 mx-auto grid grid-cols-2 items-center ">
-        <!-- item 1 -->
-        <div>
-          <h2 class="font-bold text-32 mb-5 leading-10">Beautify Your Space</h2>
-          <p class="max-w-lg font-normal leading-10 text-br-light-gray mb-8">Do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-          <a class="inline-block w-229 text-white leading-5 text-base bg-primary rounded-50 py-6 text-center" href="#">Learn More</a>
-        </div>
-        <!-- item 2 -->
-        <div class="flex relative w-568 items-center ">
-          <img src="./images/woman.png" alt="woman.png" class="w-500 z-10">
-          <img src="./images/dark-green-circle.svg" alt="dark-green-circle.svg" class=" absolute w-372 right-0 z-0">
-        </div>
-      </div>
-    </section>
-
-    <!-- department of furniture for hotel and other rooms -->
-
-    <section class="py-60">
-      <div class="w-full mx-auto max-w-1183">
-        <!-- about the section  -->
-        <h2 class="text-32 text-center heading-10 font-bold mb-5">Browse The Range</h2>
-        <p class="font-normal text-br-light-gray text-center leading-24 mb-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <!-- images wrapper -->
-        <div class="grid grid-cols-3 gap-x-5">
-          <!-- item 1 -->
-          <div>
-            <img src="./images/table-img.jpg" alt="table-img.jpg" width="381px" class="mb-8">
-              <h3 class="text-6 heading-29 text-center">Dining</h3>
-          </div>
-          <!-- item 2 -->
-          <div>
-            <img src="./images/living-room.png" alt="living-room.png" width="381px" class="mb-8">
-              <h3 class="text-6 heading-29 text-center">Living</h3>
-          </div>
-          <!-- item 3 -->
-          <div>
-            <img src="./images/living-room.png" alt="living-room.png" width="381px" class="mb-8">
-              <h3 class="text-6 heading-29 text-center">Bedroom</h3>
+            <!-- 3 -->
+            <img
+              width="355"
+              height="434"
+              class="mt-9"
+              alt="Black light image"
+              src="./src/assets/images/black-light.png"
+            />
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <hr>
+      <!-- Title is not defined section  -->
+      <section class="bg-light-blue py-16">
+        <div class="container">
+          <div class="grid grid-cols-2 gap-8 items-center">
+            <!-- Item 1 -->
+            <div>
+              <!-- Section title -->
+              <h2 class="mb-5">Beautify Your Space</h2>
 
-    <!-- fifth section  -->
+              <!-- Section description -->
+              <p class="font-normal text-br-light-gray text-xl mb-8">
+                Do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris.
+              </p>
 
-    <section class="pt-60 pb-197">
-      <div class="w-full mx-auto max-w-1183">
-        <!-- about the section  -->
-        <h2 class="text-32 text-center heading-10 font-bold mb-5">How It Works</h2>
-        <p class="font-normal text-br-light-gray text-center leading-24 mb-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <!-- images wrapper -->
-        <div class="grid grid-cols-3 gap-x-5">
-          <!-- item 1 -->
-          <div>
-            <div class="relative mb-72">
-              <img src="./images/worker-img.jpg" alt="worker-img.jpg" width="381px" class="mb-8">
-              <div class="flex absolute bottom-45 left-calc-50-45 justify-center items-center w-90 h-90 bg-br-dark text-white rounded-50 text-6 leading-29 border-15 border-white border-solid ">1.</div>
+              <!-- Link -->
+              <a href="#" class="btn-primary w-56 h-16 rounded-full"
+                >Learn More</a
+              >
             </div>
-            <!-- texts -->
-              <h3 class="text-6 heading-29 text-center font-bold mb-2.5">Purchase Securely</h3>
-              <span class="flex text-lg text-br-light-gray text-center font-normal heading-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-          </div>
-          <!-- item 2 -->
-          <div>
-            <div class="relative mb-72">
-              <img src="./images/building-img.jpg" alt="building-img.jpg" width="381px" class="mb-8">
-              <div class="flex absolute bottom-45 left-calc-50-45 justify-center items-center w-90 h-90 bg-br-dark text-white rounded-50 text-6 leading-29 border-15 border-white border-solid ">2.</div>
+
+            <!-- Item 2 -->
+            <div class="flex items-center relative">
+              <img
+                width="460"
+                height="693"
+                alt="Woman image"
+                class="z-10 w-[460px] h-auto"
+                src="./src/assets/images/woman.png"
+              />
+
+              <!-- Icon -->
+              <img
+                width="384"
+                height="384"
+                alt="Dark green circle icon"
+                class="absolute size-96 right-0 z-0"
+                src="./src/assets/icons/dark-green-circle.svg"
+              />
             </div>
-            <!-- texts -->
-              <h3 class="text-6 heading-29 text-center font-bold mb-2.5">Ships From Warehouse</h3>
-              <span class="flex text-lg text-br-light-gray text-center font-normal heading-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-          </div>
-          <!-- item 3 -->
-          <div>
-            <div class="relative mb-72">
-              <img src="./images/light-and-cactus-img.jpg" alt="light-and-cactus-img.jpg" width="381px" class="mb-8">
-              <div class="flex absolute bottom-45 left-calc-50-45 justify-center items-center w-90 h-90 bg-br-dark text-white rounded-50 text-6 leading-29 border-15 border-white border-solid ">3.</div>
-            </div>
-            <!-- texts -->
-              <h3 class="text-6 heading-29 text-center font-bold mb-2.5">Style Your Room</h3>
-              <span class="flex text-lg text-br-light-gray text-center font-normal heading-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- cta section  -->
+      <!-- Product categories section -->
+      <section class="py-16">
+        <div class="container">
+          <!-- Section title  -->
+          <h2 class="mb-5 text-center">Browse The Range</h2>
 
-    <section class="bg-light-blue py-60">
-      <div class="flex w-full max-w-514 mx-auto  justify-center items-center flex-col">
-        <!-- texts        -->
-        <h2 class="font-bold leading-39 text-32 mb-2.5">Join Our Mailing List</h2>
-        <p class="font-normal text-br-light-gray text-xl text-center leading-39 mb-12">Sign up to receive inspiration, product updates, and special offers from our team.</p>
+          <!-- Section description  -->
+          <p class="mb-12 font-normal text-br-light-gray text-xl text-center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+
+          <!-- Section content -->
+          <div class="grid grid-cols-3 gap-5">
+            <!-- Item 1 -->
+            <div>
+              <img
+                width="381"
+                alt="Table"
+                height="480"
+                class="mb-6"
+                src="./src/assets/images/table-img.jpg"
+              />
+
+              <!-- Title -->
+              <h3 class="text-center text-xl">Dining</h3>
+            </div>
+
+            <!-- Item 2 -->
+            <div>
+              <img
+                width="381"
+                height="480"
+                class="mb-6"
+                alt="Living room"
+                src="./src/assets/images/living-room.png"
+              />
+
+              <!-- Title -->
+              <h3 class="text-center text-xl">Living</h3>
+            </div>
+
+            <!-- Item 3 -->
+            <div>
+              <img
+                width="381"
+                class="mb-6"
+                height="480"
+                alt="Bedroom"
+                src="./src/assets/images/bedroom.png"
+              />
+
+              <!-- Title -->
+              <h3 class="text-center text-xl">Bedroom</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Line -->
+      <hr />
+
+      <!-- About of Works section  -->
+      <section class="py-16">
+        <div class="container">
+          <!-- Section title  -->
+          <h2 class="text-center font-bold mb-5">How It Works</h2>
+
+          <!-- Section description  -->
+          <p class="mb-12 font-normal text-br-light-gray text-center text-xl">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+
+          <!-- Section content  -->
+          <ol class="grid grid-cols-3 gap-5">
+            <!-- Item 1 -->
+            <li>
+              <!-- Image wrapper -->
+              <div class="flex justify-center relative mb-14">
+                <img
+                  width="357"
+                  height="375"
+                  alt="Worker"
+                  class="bg-light-blue rounded-xl"
+                  src="./src/assets/images/worker-img.jpg"
+                />
+
+                <span
+                  class="flex items-center justify-center absolute bottom-45 size-20 bg-br-dark text-white rounded-50 border-[15px] border-white"
+                >
+                  1
+                </span>
+              </div>
+
+              <!-- Details -->
+              <div class="space-y-2.5">
+                <h3 class="text-center font-bold">Purchase Securely</h3>
+
+                <!-- Description -->
+                <p class="text-lg text-br-light-gray text-center font-normal">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </li>
+
+            <!-- Item 2 -->
+            <li>
+              <!-- Image wrapper -->
+              <div class="flex justify-center relative mb-14">
+                <img
+                  width="357"
+                  height="375"
+                  alt="Building"
+                  class="bg-light-blue rounded-xl"
+                  src="./src/assets/images/building-img.jpg"
+                />
+
+                <span
+                  class="flex items-center justify-center absolute bottom-45 size-20 bg-br-dark text-white rounded-50 border-[15px] border-white"
+                >
+                  2
+                </span>
+              </div>
+
+              <!-- Details -->
+              <div class="space-y-2.5">
+                <h3 class="text-center font-bold">Ships From Warehouse</h3>
+
+                <!-- Description -->
+                <p class="text-lg text-br-light-gray text-center font-normal">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </li>
+
+            <!-- Item 3 -->
+            <li>
+              <!-- Image wrapper -->
+              <div class="flex justify-center relative mb-14">
+                <img
+                  width="357"
+                  height="375"
+                  alt="Lamp and cactus"
+                  class="bg-light-blue rounded-xl"
+                  src="./src/assets/images/light-and-cactus-img.jpg"
+                />
+
+                <span
+                  class="flex items-center justify-center absolute bottom-45 size-20 bg-br-dark text-white rounded-50 border-[15px] border-white"
+                >
+                  3
+                </span>
+              </div>
+
+              <!-- Details -->
+              <div class="space-y-2.5">
+                <h3 class="text-center font-bold">Style Your Room</h3>
+
+                <!-- Description -->
+                <p class="text-lg text-br-light-gray text-center font-normal">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+    </main>
+
+    <!-- CTA  -->
+    <section class="bg-light-blue py-16">
+      <div
+        class="flex justify-center items-center flex-col container !max-w-lg"
+      >
+        <!-- Section title -->
+        <h2 class="mb-5">Join Our Mailing List</h2>
+
+        <!-- Section description -->
+        <p class="mb-12 font-normal text-br-light-gray text-xl text-center">
+          Sign up to receive inspiration, product updates, and special offers
+          from our team.
+        </p>
+
         <!-- form  -->
-        <form action="https://echo.htmlacademy.ru" class="flex max-w-486 w-full">
-          <input placeholder="example@gmail.com" name="email" type="email" required class="p-6 rounded-r-none grow bg-white text-base font-normal leading-19 border-1 border-r-0 rounded-sm border-solid border-primary-dark text-br-primary">
-          <button type="submit" class="text-base text-white bg-primary-dark py-6 px-11 rounded-sm font-bold leading-19">Submit</button>
+        <form class="flex w-full">
+          <input
+            required
+            name="email"
+            type="email"
+            placeholder="email@example.com"
+            class="px-6 py-5 grow bg-white font-normal border border-primary-dark text-br-primary"
+          />
+
+          <!-- Submit button -->
+          <button type="submit" class="btn-primary w-40 font-semibold">
+            Submit
+          </button>
         </form>
       </div>
     </section>
-  </main>
 
-  <!-- footer  -->
+    <!-- Footer  -->
+    <footer class="py-40 bg-primary-dark text-white">
+      <div class="container">
+        <div class="flex justify-between items-start gap-5">
+          <div class="max-w-400 space-y-5">
+            <b class="text-2xl"> Beauty Care </b>
 
-  <footer class="pt-52 pb-90 bg-primary-dark">
-    <div class="flex justify-between items-center w-full max-w-1183 mx-auto">
-      <!-- item 1 -->
-      <div class="max-w-400">
-        <h2 class="font-bold text-white leading-29 text-6 mb-9">Beauty Care</h2>
-        <p class="font-normal text-base leading-35 text-white mb-5">Do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-        <p class="font-bold text-white leading-29 text-6">Follow Us</p>
-      </div>
-      <!-- item 2 -->
-      <div>
-        <h3 class="font-bold text-white leading-29 text-6 mb-6">Instagram Shop</h3>
-        <div class="grid grid-cols-4 gap-5">
-          <img src="./images/whale-doll-img.jpg" alt="whale-doll-img.jpg" width="175px" height="185px">
-          <img src="./images/bottle-img.jpg" alt="bottle-img.jpg" width="175px" height="185px">
-          <img src="./images/cloth-img.jpg" alt="cloth-img.jpg" width="175px" height="185px">
-          <img src="./images/kitchen-img.jpg" alt="kitchen-img.jpg" width="175px" height="185px">
+            <p class="font-normal opacity-80">
+              Do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+            </p>
+          </div>
+
+          <!-- Images grid -->
+          <div class="space-y-5">
+            <b class="text-2xl">Instagram Shop</b>
+
+            <!-- Images -->
+            <div class="grid grid-cols-4 gap-5">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://instagram.com"
+              >
+                <img
+                  width="158"
+                  height="158"
+                  alt="Whale doll"
+                  src="./src/assets/images/whale-doll-img.jpg"
+                  class="size-[158px] aspect-square object-cover"
+                />
+              </a>
+
+              <!-- 2 -->
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://instagram.com"
+              >
+                <img
+                  width="158"
+                  height="158"
+                  alt="Bottle"
+                  src="./src/assets/images/bottle-img.jpg"
+                  class="size-[158px] aspect-square object-cover"
+                />
+              </a>
+
+              <!-- 3 -->
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://instagram.com"
+              >
+                <img
+                  width="158"
+                  alt="Cloth"
+                  height="158"
+                  src="./src/assets/images/cloth-img.jpg"
+                  class="size-[158px] aspect-square object-cover"
+                />
+              </a>
+
+              <!-- 4 -->
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://instagram.com"
+              >
+                <img
+                  width="158"
+                  height="158"
+                  alt="Kitchen"
+                  src="./src/assets/images/kitchen-img.jpg"
+                  class="size-[158px] aspect-square object-cover"
+                />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
-</body>
-</html> 
+    </footer>
+  </body>
+</html>
